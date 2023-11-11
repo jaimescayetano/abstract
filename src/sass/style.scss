@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
+
+$morado: #4C5FD5;
+$plomo: #dadbf1;
+$negro: #000000;
+$blanco: #fff;
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+
+    text-decoration: none;
+
+    a {
+        text-decoration: none;
+    }
+
+    header {
+        background-color: $negro;
+        color: $blanco;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        width: 100%;
+
+        nav {
+            width: 90%;
+            max-width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            p {
+                font-size: 24px;
+
+                strong {
+                    font-weight: 500;
+                }
+            }
+        }
+
+        div {
+            a {
+                color: white;
+                padding: 13px 30px;
+                border: 2px solid white;
+                border-radius: 8px;
+                margin: auto 4px;
+                transition: 0.3s;
+            }
+
+            .bt-signin {
+                background-color: $morado;
+                border-color: $morado;
+
+                &:hover {
+                    background-color: $blanco;
+                    border-color: $blanco;
+                    color: $negro;
+                }
+            }
+        }
+    }
+
+    main {
+        background-color: $plomo;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 40vh;
+
+        h1 {
+            margin: 20px auto;
+            font-size: 70px;
+            font-weight: 500;
+            letter-spacing: -2px;
+        }
+
+        div {
+            width: 750px;
+
+            input {
+                box-sizing: border-box;
+                width: 100%;
+                height: 55px;
+                padding: 10px 20px;
+                font-size: 20px;
+                border: 1px solid $negro;
+                border-radius: 4px;
+                outline: none;
+            }
+        }
+    }
+}
