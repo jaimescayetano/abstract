@@ -68,6 +68,33 @@ body {
         }
     }
 
+    .menu-responsive {
+        background-color: $negro;
+        color: $blanco;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: 1000;
+        height: 20vh;
+        width: 100%;
+        font-size: 24px;
+
+        a {
+            color: $blanco;
+
+            &:hover {
+                color: rgb(153, 153, 153);
+            }
+        }
+
+        hr {
+            width: 350px;
+            margin: 10px 0px;
+        }
+    }
+
     main {
         background-color: $plomo;
         display: flex;
@@ -81,19 +108,31 @@ body {
             font-size: 70px;
             font-weight: 500;
             letter-spacing: -2px;
+            text-align: center;
         }
 
         div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $blanco;
+            border: 1px solid $negro;
+            border-radius: 4px;
             width: 750px;
+            height: 60px;
 
             input {
-                width: 100%;
-                height: 55px;
+                width: 90%;
+                height: 90%;
                 padding: 10px 20px;
                 font-size: 20px;
-                border: 1px solid $negro;
-                border-radius: 4px;
+                border: none;
                 outline: none;
+            }
+
+            svg {
+                width: 40px;
+                margin: 10px;
             }
         }
     }
@@ -142,7 +181,8 @@ body {
             width: 90%;
             padding: 20px 0px;
             margin: 0px auto;
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
 
             div {
                 display: block;
@@ -163,6 +203,140 @@ body {
                     width: 138px;
                 }
 
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        header {
+            nav {
+                div {
+                    a {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        section {
+            max-width: 90%;
+        }
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        section {
+            grid-template-columns: repeat(1, 1fr);
+            max-width: 80%;
+        }
+
+        footer {
+            div {
+                grid-template-columns: repeat(4, 1fr);
+
+                div {
+                    svg {
+                        margin: 10px 0px 0px 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        main {
+            div {
+                width: 600px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        footer {
+            div {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        main {
+            h1 {
+                font-size: 50px;
+            }
+
+            div {
+                width: 400px;
+            }
+        }
+
+        section {
+            max-width: 100%;
+
+            div {
+                margin: 20px;
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+
+                div {
+                    h2 {
+                        font-size: 20px;
+                        margin: 0px 0px 10px 0px;
+                    }
+
+                    p {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+
+        footer {
+            div {
+                grid-template-columns: repeat(2, 1fr);
+
+                div {
+                    svg {
+                        margin: 10px 0px 0px 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        main {
+            div {
+                width: 340px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    body {
+        header {
+            nav {
+                div {
+                    svg {
+                        display: none;
+                    }
+                }
             }
         }
     }
