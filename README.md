@@ -1,6 +1,6 @@
 # Proyecto Abstract
 
-Realice este proyecto con el objetivo de mejorar mi maquetación web.
+Realice este proyecto con el objetivo de mejorar mi maquetación web. El ejercicio se encuentra en la pagina [Frontend Practice](https://www.frontendpractice.com/projects).
 
 ## Enlace de la web
 
