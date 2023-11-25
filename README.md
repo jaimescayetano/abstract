@@ -1,6 +1,6 @@
 # Proyecto Abstract
 
-Realice este proyecto con el objetivo de mejorar mi maquetación web con tecnologias como HTML, SASS y JavaScript. El ejercicio se encuentra en la pagina [Frontend Practice](https://www.frontendpractice.com/projects).
+Realicé este proyecto con el objetivo de mejorar mi maquetación web con tecnologías como HTML, SASS y JavaScript. El ejercicio se encuentra en la página [Frontend Practice](https://www.frontendpractice.com/projects).
 
 ## Enlace de la web
 
